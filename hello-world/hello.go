@@ -2,10 +2,20 @@ package main
 
 import (
 	"fmt"
-	"rsc.io/quote"
+	// "rsc.io/quote"
 )
 
+
+
 func main(){
-	fmt.Println("Hello world")
-	fmt.Println(quote.Go())
+	// Variable definition
+	
+		firstName, lastName, age := "Javier", "Jaramillo", 41
+		age = 42
+
+	
+	
+	
+	fmt.Println(firstName, lastName, age)
+	// fmt.Println(quote.Go())
 }
