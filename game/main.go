@@ -19,7 +19,7 @@ func game(){
 			fmt.Printf("You have %d turns \n", maxTurns - turns)
 			fmt.Println("Type your number: ")
 			fmt.Scanln(&typeNumber)
-
+			
 			if typeNumber < randNumber{
 				fmt.Printf("The number is less \n")
 				turns++
@@ -32,7 +32,9 @@ func game(){
 				return
 			}
 			
-	}
+		}
+	fmt.Printf("=====Oh no, you lost=====!! \n")
+	option()
 }
 func option(){
 	var option string 
@@ -46,6 +48,8 @@ func option(){
 	case "n":
 		fmt.Println("Thanks see you soon!!")
 		break
+	default:
+		fmt.Println("Invalid option!!")
 	}
 	
 }
